@@ -42,6 +42,12 @@
 
 - [NPM 中文文档](https://www.kancloud.cn/shellway/npm-doc/199995)
 
+#### web 编辑器原理
+
+- [编辑器原理](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/execCommand#%E5%91%BD%E4%BB%A4)
+- [编辑器 demo](https://blog.csdn.net/shuaigeyjz1/article/details/73506090)
+- [UEditorAPI](https://ueditor.baidu.com/doc/)
+
 #### 大咖博客
 
 - [黄奕博客](https://github.com/CommanderXL/biu-blog)
