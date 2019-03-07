@@ -2,6 +2,10 @@
 
 记录相关技术网址
 
+#### 知识积累
+
+- [琐碎知识点积累](./EXERCISE.md)
+
 #### tapable 源码解读
 
 - [不满足于只会使用系列: tapable](https://segmentfault.com/a/1190000017421077#articleHeader9)
