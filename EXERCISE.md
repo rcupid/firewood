@@ -2,6 +2,27 @@
 
 每天刷几道面试题
 
+#### 2019 年 3 月 7 日 09:47:15
+
+##### get
+
+diapatch 和 broadcast 在 vue1.0 中和 element-ui 的实现方式的差异，
+
+> - diapatch 的差异：
+>
+>   > 1.vue1.0 中只有一个参数 event,其他参数是通过 argument 获取,element-ui 实现的版本会接受三个参数，分别是：需要触发事件的组件名称、将要触发的事件名称、回调函数传递的参数；
+>   > 2.vue1.0 的 dispatch 会一直沿着父组件链网上触发，一直到没有返回 true，elemnt-ui 的 dispatch 会一直找到相同的组件名称 this.\$options.componentName 结束 利用了 while
+>
+> - broadcast 的差异：
+>   > 1.  broadcast vue1.0 中只有一个参数而,element-ui 实现的版本会接受三个参数，分别是：需要触发事件的组件名称、将要触发的事件名称、回调函数传递的参数；
+>   >     2.Vue 实现的 \$broadcast 触发方式是默认只触发子代组件，不触发孙子代组件，如果子代创建了监听且返回了 true，才会向孙子代组件传递事件。而 element-ui 实现的版本是直接向所有子孙后代组件传递，直至获取到的子组件名称等于传入的组件名称相等，才会触发当前子组件的监听事件，期间也没有返回值的判定。
+
+> 没有解决兄弟组件之间的通信问题，如果组件变过，变得很脆弱
+
+##### 相关链接
+
+[Vue 中$disptch 和$broadcast 详解](https://juejin.im/post/5c7fd345f265da2da771f4cd?utm_source=gold_browser_extension)
+
 #### 2019 年 2 月 20 日 10:08:01
 
 ##### get
