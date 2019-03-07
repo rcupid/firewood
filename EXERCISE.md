@@ -34,8 +34,8 @@ diapatch 和 broadcast 在 vue1.0 中和 element-ui 的实现方式的差异，
 
 ##### 相关链接
 
-[数组的去重和排序](https://juejin.im/post/5c6b8db56fb9a049b41d083e)
-[数组的去重](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-[数组里所有值的和](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-[将二维数组转化为一维](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-[计算数组中每个元素出现的次数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [数组的去重和排序](https://juejin.im/post/5c6b8db56fb9a049b41d083e)
+- [数组的去重](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [数组里所有值的和](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [将二维数组转化为一维](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [计算数组中每个元素出现的次数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
