@@ -5,6 +5,8 @@
 #### 知识积累
 
 - [琐碎知识点积累](./EXERCISE.md)
+- [工具函数积累](./UTILS.md)
+- [指令积累](./DIRECTIVES.md)
 
 #### tapable 源码解读
 
