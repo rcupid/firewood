@@ -4,7 +4,7 @@
 
 #### 知识积累
 
-- [琐碎知识点积累](./EXERCISE.md)
+- [琐碎知识点积累](./days/index.md)
 - [工具函数积累](./UTILS.md)
 - [指令积累](./DIRECTIVES.md)
 
