@@ -22,7 +22,9 @@
 - [模板](https://github.com/ali322/frontend-boilerplate)
 - [教你从零开始搭建一款前端脚手架工具](https://segmentfault.com/a/1190000006190814?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly#articleHeader0)
 
-#### webpack4 splitChunks
+#### webpack4
+
+- [前端构建秘籍](https://juejin.im/post/5c9075305188252d5c743520#heading-3)
 
 - [webpack4：连奏中的进化](https://www.cnblogs.com/wmhuang/p/8967639.html)
 
