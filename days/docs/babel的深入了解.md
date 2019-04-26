@@ -27,6 +27,12 @@
 - 新的 API Promise，Symbol，Iterator，Set,Map 等
 - 全局对象上的方法（比如 Object.assign ）
 
+core-js 依赖安装的是 core-js@3 版本的，@babel/prest-env 依赖 core-js@2 的版本，需要重新装一下
+
+```bash
+npm i core-js@2
+```
+
 ## 下面内容是之前老的技术的讲解，可以大概了解一下
 
 - babel-loader: 负责 es6 语法转化
