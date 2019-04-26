@@ -27,6 +27,14 @@
 - 新的 API Promise，Symbol，Iterator，Set,Map 等
 - 全局对象上的方法（比如 Object.assign ）
 
+## 下面内容是之前老的技术的讲解，可以大概了解一下
+
+- babel-loader: 负责 es6 语法转化
+- babel-preset-env: 包含 es6、7 等版本的语法转化规则
+- babel-polyfill: es6 内置方法和函数转化垫片
+- babel-plugin-transform-runtime: 避免 polyfill 污染全局变量
+  需要注意的是, babel-loader 和 babel-polyfill。前者负责语法转化，比如：箭头函数；后者负责内置方法和函数，比如：new Set()。
+
 ### babel
 
 - 只转换新的 javascript 语法，比如箭头函数,const,数组解构等

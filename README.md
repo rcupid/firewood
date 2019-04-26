@@ -42,6 +42,7 @@
 
 - [Vue-cli@3.0 插件系统简析](https://juejin.im/post/5b8f586c5188255c9d55eedf)
 - [vue-cli 3.0 安装和使用](https://blog.csdn.net/weiwenwen6/article/details/83120115)
+- [Vue 源码解读](https://kuangpf.com/vue-cli-analysis/foreword/)
 
 #### cammander
 
