@@ -1,5 +1,9 @@
 ### 总结
 
+> webpack 4.x | babel-loader 8.x | babel 7.x
+```bash
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+```
 使用@babel/preset-env@7.4 然后再设置.babelrc
 
 ```javascript
