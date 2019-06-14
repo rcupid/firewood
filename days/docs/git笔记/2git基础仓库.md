@@ -64,3 +64,27 @@ $ git remote
 origin
 
 ```
+
+### 打标签
+```bash
+# 列出标签
+git tag
+
+# 展示标签详细星系
+git show v1.1
+
+# 查找标签
+git tag -l `v1.8`
+
+# 附注标签 annotated
+git tag -a v1.1 -m 'version is name'
+
+# 轻量标签 
+git tag 
+
+# 推送标签
+git push origin --tags
+# 或
+git push origin v1.1
+```
+
