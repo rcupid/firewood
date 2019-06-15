@@ -23,3 +23,5 @@ git checkout -u origin/fenzhi
 # 删除远程分支
 git push origin --delete fenzhiname
 ```
+
+### 遍基
