@@ -1,0 +1,23 @@
+{
+  "name": "firewood",
+  "version": "0.1.0",
+  "description": "记录相关技术网址",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcupid/firewood.git"
+  },
+  "keywords": [],
+  "author": "liujianwei <liujianwei1213@163.com> (http://github.com/IIcupid)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcupid/firewood/issues"
+  },
+  "homepage": "https://github.com/rcupid/firewood#readme"
+}
