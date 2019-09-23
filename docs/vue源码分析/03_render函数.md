@@ -1,5 +1,5 @@
-## render
-###  render函数中的createElement 三个参数
+
+###  GET:render函数中的createElement 三个参数
 - createElment dom节点
 - 数据对象
 - 子节点
