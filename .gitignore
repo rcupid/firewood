@@ -96,5 +96,3 @@ public
 
 # DynamoDB Local files
 .dynamodb/
-
-work/
