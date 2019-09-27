@@ -148,6 +148,7 @@ export default {
 - $attrs 特性集合，已经声明的props不会再$attrs里面出现，未声明的用 v-bind="$attrs" 展开.
 - 子类的inheritAttrs默认为true.子类是可以继承，父类提供的所有attribute的键值对。如果设置false，则禁止继承，只有通过$attrs特性才可以继承
 
+
 inheritAttrs：true    
 ![inheritAttrs:true](../../images/20190927081537.png)  
 inheritAttrs：false   
