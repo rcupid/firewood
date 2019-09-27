@@ -51,4 +51,3 @@ function addEvent (type, el, fn, capture = false) {
 }
 
 //应用场景3- bind方法
-```
