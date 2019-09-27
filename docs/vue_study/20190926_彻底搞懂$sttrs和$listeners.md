@@ -1,4 +1,4 @@
-### $attrs 
+### $attrs $listeners 巧妙用法
 子类
 ```javascript
 <template>
@@ -65,6 +65,84 @@ export default {
 }
 </script>
 ```
+
+### 隔代相传
+A组件
+```javascript
+<template>
+ <div>
+   <child-dom
+    :foo="foo"
+    :coo="coo"
+     @upRocket="reciveRocket"
+   >
+   </child-dom>
+ </div>
+</template>
+<script>
+ import childDom from "@/components/ChildDom.vue";
+ export default {
+   name:'demoNo',
+   data() {
+     return {
+       foo:"Hello, world",
+        coo:"Hello,rui"
+    }
+  },
+ components:{childDom},
+ methods:{
+   reciveRocket(){
+      console.log("reciveRocket success")
+   }
+ }
+}
+</script>
+```
+
+B组件
+```javascript
+<template>
+  <div>
+    <p>foo:{{foo}}</p>
+    <p>attrs:{{$attrs}}</p>
+    <childDomChild
+      v-bind="$attrs"
+      v-on="$listeners"
+    ></childDomChild>
+  </div>
+</template>
+<script>
+import childDomChild from './childDomChild'
+export default {
+  name: 'child-dom',
+  props: ['foo'],
+  inheritAttrs: false
+}
+</script>
+```
+
+C组件
+```javascript
+<template>
+  <div>
+    <p>coo:{{coo}}</p>
+    <button @click="startUpRocket">我要发射火箭</button>
+  </div>
+</template>
+<script>
+export default {
+  name: 'childDomChild',
+  props: ['coo'],
+  methods: {
+    startUpRocket () {
+      this.$emit('upRocket')
+      console.log('startUpRocket')
+    }
+  }
+}
+</script>
+```
+
 
 ### 总结
 - $attrs 特性集合，已经声明的props不会再$attrs里面出现，未声明的用 v-bind="$attrs" 展开.
