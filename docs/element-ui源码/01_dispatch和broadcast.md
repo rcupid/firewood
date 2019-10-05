@@ -68,3 +68,12 @@ function boradcast2(eventName, params) {
   });
 }
 ```
+
+GET:可以替换import的引入
+```javascript
+{
+  plugins: [
+    new webpack.NormalModuleReplacementPlugin(/element-ui[\/\\]lib[\/\\]locale[\/\\]lang[\/\\]zh-CN/, 'element-ui/lib/locale/lang/en')
+  ]
+}
+```
