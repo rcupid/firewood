@@ -1,0 +1,1 @@
+[chrome-plugins 相关资料](https://github.com/sxei/chrome-plugin-demo)
