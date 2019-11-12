@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0,maximum=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    (function () {
+      function refreshViewportContent() {
+        var defaultWidth = 360;
+        var clientWidth = document.documentElement.clientWidth || defaultWidth;
+        var scale = clientWidth / defaultWidth
+        var content = 'width=' + defaultWidth + ', initial-scale=' + scale + ',maximum-scale=' + scale + ',user-scalable=no'
+        document.getElementById('viewport').setAttribute("content", content)
+      }
+
+      //初始化
+      refreshViewportContent()
+
+      window.addEventListener('resize', refreshViewportContent, false)
+      window.addEventListener('pageshow', refreshViewportContent, false);
+    })()
+  </script>
+  <style>
+    .box {
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>
