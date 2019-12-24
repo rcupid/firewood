@@ -46,8 +46,8 @@ npm i core-js@2
 ```
 
 ## 下面内容是之前老的技术的讲解， 可以大概了解一下
-
-- babel-loader: 负责 es6 语法转化
+- babel-loader:只是一个webpack和babel之间的桥梁
+- babel: 负责 es6 语法转化
 - babel-preset-env: 包含 es6、 7 等版本的语法转化规则
 - babel-polyfill: es6 内置方法和函数转化垫片
 - babel-plugin-transform-runtime: 避免 polyfill 污染全局变量
