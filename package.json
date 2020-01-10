@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rcupid/firewood/issues"
   },
-  "homepage": "https://github.com/rcupid/firewood#readme"
+  "homepage": "https://github.com/rcupid/firewood#readme",
+  "dependencies": {
+    "koa-demo": "^1.0.0"
+  }
 }
