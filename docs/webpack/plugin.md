@@ -50,6 +50,7 @@ class Compiler extends Tapable {
 class FileListPlugin {
   apply(compiler) {
     // emit 是异步 hook，使用 tapAsync 触及它，还可以使用 tapPromise/tap(同步)
+    //第一个参数为事件名称，在 Webpack 中一般用于存储事件对应的插件名称（名字随意，只是起到注释作用）， 第二个参数为事件处理函数，函数参数为执行 call 方法触发事件时所传入的参数的形参。
     compiler.hooks.emit.tapAsync('FileListPlugin', (compilation, callback) => {
       // 在生成文件中，创建一个头部字符串：
       var filelist = 'In this build:\n\n';
@@ -82,6 +83,7 @@ module.exports = FileListPlugin;
 ```javascript
 class BuildUpload{
   apply(comiler){
+    
     compiler.plugin('done', function(stats) {
     outputPath = compiler.outputPath;
     //directoryUpload(outputPath, _this.options.receiver, _this.options.toPath);
