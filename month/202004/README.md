@@ -19,3 +19,9 @@ vue template compiler包含三个处理步骤，按顺序排列如下：
 - Last-Modified(响应头)/If-Modified-Since(请求头)
 - Etag(响应头)/If-None-Math(请求头)
 
+
+### [Hybrid 应用中 H5 与 Native 通信的那点事儿](https://mp.weixin.qq.com/s/bq_i1KONEvmz5tZ2obKC5Q)
+- 两种方式通信，一种都是挂载到window下面，另一种是 通过[jsBridge](https://github.com/lzyzsd/JsBridge)桥接，通过改变iframe src的值
+- H5调用NA流程，NA监听iframe src的变化，做出相应。H5改变src的值，为什么会两次调用
+- NA调用H5流程，通过注册监听方式
+
