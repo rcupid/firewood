@@ -34,3 +34,5 @@ vue template compiler包含三个处理步骤，按顺序排列如下：
 - 理解了端口号映射和 本地数据映射的到底是什么
 - 学会了看通过docker 的操作命令，来操作docker
 
+
+
