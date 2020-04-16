@@ -110,3 +110,19 @@ docker run -d  -p 8881:443 -p 8882:80 -p 8883:22 --name gitlab --hostname 192.16
 　　# -v 指定挂载存储卷
 ```
  - 短号的映射一定要对 
+
+
+ ### [docker安装gitlab-runner](https://www.cnblogs.com/zzhaolei/p/11063345.html)
+ ### [gitlab-runner](https://docs.gitlab.com/runner/install/docker.html)
+ ### [gitlab-runner](https://www.cnblogs.com/roluodev/p/12251472.html)
+ ```bash
+ docker run -d --name gitlab-runner   \
+  -v $PWD/gitlab-runner/config:/etc/gitlab-runner \
+  -v $PWD/gitlab-runner/run/docker.sock:/var/run/docker.sock \
+  gitlab/gitlab-runner:latest
+
+docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
+
+docker exec -it gitlab-runner gitlab-runner register
+http://192.168.0.101:8882
+ ```
