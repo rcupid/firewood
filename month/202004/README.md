@@ -26,3 +26,11 @@ vue template compiler包含三个处理步骤，按顺序排列如下：
 - NA调用H5流程，通过注册监听方式
 - [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
 
+
+### [docker安装redis，mysql，gitlab笔记和心得](../../docs/docker/README.md)
+- grep 'linx' filename
+- docker ps -a
+- :n
+- 理解了端口号映射和 本地数据映射的到底是什么
+- 学会了看通过docker 的操作命令，来操作docker
+
