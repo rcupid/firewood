@@ -35,4 +35,60 @@ vue template compiler包含三个处理步骤，按顺序排列如下：
 - 学会了看通过docker 的操作命令，来操作docker
 
 
+### [前端监控和埋点](https://juejin.im/post/5e9052916fb9a03c9843284f?utm_source=gold_browser_extension)
+- 当科普知识了解一下
 
+
+
+### [Proxy](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy#%E7%A4%BA%E4%BE%8B)
+- apply 拦截函数
+- contrut 拦截构造函数
+- get
+- set
+- deleteProty
+
+### [基于 Vue.js 的移动端组件库](http://mint-ui.github.io/#!/zh-cn)
+### [京东移动端组件库](http://nutui.jd.com/#/Button)
+- 居中
+
+### [实现双向绑定Proxy比defineproperty优劣如何](https://www.jianshu.com/p/2df6dcddb0d7)
+- Dep 消息中心，发布订阅中心
+- Observer添加监听 没一个值对应一个消息中心，new Dep，通过get的方式，添加一个Watcher实例
+- Watcher new Watcher的时候调用了一个get，把自己添加到消息中心，当接到有更改的时候去更新视图 this.updater
+- Compile 解析器
+- 一张图
+
+### [ES6中的Proxy、Reflect以及Vue3.0中的应用原理](https://blog.csdn.net/Creabine/article/details/87811207)
+#### Object.defineProperty的劣势
+- 只能监听对象的属性，如果对象复杂，需要深度遍历，耗费性能
+- 不能监听数组的变化，是的Vue对数组做了一层hack处理
+#### Proxy对于代理模式Proxy的作用主要体现在三个方面:
+- 拦截和监视外部对对象的访问
+- 降低函数或类的复杂度
+- 在复杂操作前对操作进行校验或对所需资源进行管理
+
+### [js 深克隆](https://blog.csdn.net/lyt_angularjs/article/details/86599820)
+- 正则表达式  时间  函数
+- 简单深克隆 JSON.stringify(obj)
+- 浅克隆 Object.assign()
+
+### [Object.create()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+### [Object.create()和new object()和{}的区别](https://www.cnblogs.com/leijee/p/7490822.html)
+- 返回一个新对象，带着指定的原型对象和属性。不会影响上一个对象
+- Object.create(null) 创建的对象是一个空对象，在该对象上没有继承 Object.prototype 原型链上的属性或者方法,例如：toString(), hasOwnProperty()等方法
+- 继承
+```javascript
+   function Shape(){
+     this.x=1
+     this.y=2;
+   }
+   Shap.prototype.log=()=>{
+     console.log(this.x,this.y)
+   }
+
+   function React(){
+     Shape.call(this)
+   }
+   React.prototype=Object.create(Shape.prototype)
+   React.prototype.contructor=React
+```
