@@ -124,4 +124,13 @@ RUN echo "\ndaemon off;">>/etc/ngnix/nignix.conf
 #容器启动时执行指令
 CMD /usr/sbin/ngnix
 ```
+### [Docker Compose 配置文件详解](https://www.jianshu.com/p/2217cfed29d7)
+### [Docker Compose 详解](https://www.jianshu.com/p/658911a8cff3)
+- version
+- services
+- networks
+- Docker Compose 将所管理的容器分为三层，分别是工程（project）、服务（service）、容器（container）
+- Docker Compose 运行目录下的所有文件（docker-compose.yml）组成一个工程,一个工程包含多个服务，每个服务中定义了容器运行的镜像、参数、依赖，一个服务可包括多个容器实例
+
+
 
