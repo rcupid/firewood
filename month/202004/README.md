@@ -92,3 +92,36 @@ vue template compiler包含三个处理步骤，按顺序排列如下：
    React.prototype=Object.create(Shape.prototype)
    React.prototype.contructor=React
 ```
+
+### [Dockerfile](https://www.cnblogs.com/boshen-hzb/p/6400272.html)
+### [Dockerfile 语法](https://www.jianshu.com/p/5f4b1ade9dfc)
+### [使用 docker 高效部署你的前端应用](https://mp.weixin.qq.com/s/ykyqb2clrYsWkCvR4k3KYA)
+- 定制镜像的本质就是封装好一个包，让别人用
+- 创建一个nginx包，在里面创建一个Dockerfile文件（没有扩展名），然后填写指令和参数，最后编译
+``` bash
+# 从哪里开始
+FROM nginx:latest
+RUN echo '<h2>Hello,Boy!</h2>' > /usr/shared/nginx/html/index.html
+```
+保存文件
+```bash
+// .：代表找当前目录下面的Dockerfile文件
+// nginx:boy我所创建的镜像名称
+docker build -t nginx:boy .
+```
+- CMD 是docker run之后执行的指令
+```bash
+#第一行必须指令基于的基础镜像
+FROM ubutu
+
+#维护者信息
+MAINTAINER docker_user  docker_user@mail.com
+
+#镜像的操作指令
+RUN apt-get update && apt-get install -y ngnix 
+RUN echo "\ndaemon off;">>/etc/ngnix/nignix.conf
+
+#容器启动时执行指令
+CMD /usr/sbin/ngnix
+```
+
