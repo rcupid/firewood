@@ -132,5 +132,27 @@ CMD /usr/sbin/ngnix
 - Docker Compose 将所管理的容器分为三层，分别是工程（project）、服务（service）、容器（container）
 - Docker Compose 运行目录下的所有文件（docker-compose.yml）组成一个工程,一个工程包含多个服务，每个服务中定义了容器运行的镜像、参数、依赖，一个服务可包括多个容器实例
 
+### [抖音视频](https://zhuanlan.zhihu.com/p/85262283)
+最近想在抖音上开个介绍前端基础知识的东西
 
+### [前端性能优化之WebP](https://www.jianshu.com/p/101b047c1146)
+- 质量相同的情况下，体积更小
+- 服务器通过user-agent判断是否返回webp格式的图片
+- 浏览器判断是否支持webp然后处理图片
+- webpjs
+``` text
+原图：http://imgcache.qq.com/club/client/card/rel/img/default.jpg
 
+webp图：http://imgcache.qq.com/club/client/card/rel/img/default.jpg.webp
+```
+- 本司是在请求图片的url地址后面添加了webp参数
+- 尝试从canvas中导出WebP格式的图片，观察是否能够正常导出
+```javascript
+function checkWebp() {
+    try {
+        return (document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0);
+    } catch (err) {
+        return false;
+    }
+}
+```
