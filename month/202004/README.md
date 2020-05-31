@@ -19,13 +19,11 @@ vue template compiler包含三个处理步骤，按顺序排列如下：
 - Last-Modified(响应头)/If-Modified-Since(请求头)
 - Etag(响应头)/If-None-Math(请求头)
 
-
 ### [Hybrid 应用中 H5 与 Native 通信的那点事儿](https://mp.weixin.qq.com/s/bq_i1KONEvmz5tZ2obKC5Q)
 - 两种方式通信，一种都是挂载到window下面，另一种是 通过[jsBridge](https://github.com/lzyzsd/JsBridge)桥接，通过改变iframe src的值
 - H5调用NA流程，NA监听iframe src的变化，做出相应。H5改变src的值，为什么会两次调用
 - NA调用H5流程，通过注册监听方式
 - [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
-
 
 ### [docker安装redis，mysql，gitlab笔记和心得](../../docs/docker/README.md)
 - grep 'linx' filename
@@ -156,3 +154,42 @@ function checkWebp() {
     }
 }
 ```
+
+
+### [HTML5 <script> 标签里的 crossorigin 属性到底有什么用？](https://www.chrisyue.com/what-the-hell-is-crossorigin-attribute-in-html-script-tag.html)
+```bash
+当引入跨域的脚本（比如用了 apis.google.com 上的库文件）时，如果这个脚本有错误，因为浏览器的限制（根本原因是协议的规定），是拿不到错误信息的。当本地尝试使用 window.onerror 去记录脚本的错误时，跨域脚本的错误只会返回 Script error。  
+  而 HTML5 新的规定，是可以允许本地获取到跨域脚本的错误信息的，但有两个条件：一是跨域脚本的服务器必须通过 Access-Control-Allow-Origin 头信息允许当前域名可以获取错误信息，二是网页里的 script 标签也必须指明 src 属性指定的地址是支持跨域的地址，也就是 crossorigin 属性
+```
+```bash
+anonymous：如果使用这个值的话就会在请求中的header中的带上Origin属性，但请求不会带上cookie和其他的一些认证信息。
+use-credentials：这个就同时会在跨域请求中带上cookie和其他的一些认证信息。
+在使用这两个值时都需要server端在response的header中带上Access-Control-Allow-Credentials属性。
+可以通过server的配置文件来开启这个属性：server开启Access-Control-Allow-Credentials
+```
+
+### [Head标签里面的dns-prefetch，preconnect，prefetch和prerender](https://segmentfault.com/a/1190000011065339)
+### [head头部的一些配置信息](https://github.com/Amery2010/HEAD)
+### [Google的结构化测试工具]()
+- dns-prefetch 提前dns解析
+- preconnect  提前进行TCP三次握手链接
+- prefetch 提前获取资源，但不解析
+- prerender 提前解析
+
+
+### [正则表达式大全](https://github.com/any86/any-rule)
+
+### [动态增减表单、表单验证](https://blog.csdn.net/Mr_EvanChen/article/details/83115954)
+- 验证表单
+
+
+### [客户端接收服务端消息推送sockjs-client的使用](https://blog.csdn.net/nongshuqiner/article/details/78792079)
+### [在vue中使用SockJS实现webSocket通信](https://www.jianshu.com/p/b8aa70bf1340)
+- sockjs-client 实时接收服务器推送的消息
+
+### [Puppeteer-无头浏览器简介](https://zhuanlan.zhihu.com/p/40103840)
+### [无头浏览器Puppeteer初探](https://zhuanlan.zhihu.com/p/30203613)
+- 我们日常使用浏览器的步骤为：启动浏览器、打开一个网页、进行交互。而无头浏览器指的是我们使用脚本来执行以上过程的浏览器，能模拟真实的浏览器使用
+
+```bash
+111

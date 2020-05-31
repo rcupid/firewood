@@ -18,18 +18,57 @@
       width: 50%;
       height: 50%;
     }
+
+    .main {
+      height: 12000px;
+    }
+
+    li:nth-of-type(2n) {
+      background: turquoise;
+      height: 300px;
+    }
   </style>
 </head>
 
 <body>
+  <div class="main">
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+  </div>
   <script>
+    const scrollToTop = () => {
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+      if (c > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, c - c / 8);
+      }
+    }
 
-    let a = 1
-    let b = a[0].m + ''
-    console.log(b);
-
-    console.log(Date.now());
-
+    setTimeout(() => {
+      scrollToTop()
+    }, 3000)
   </script>
 </body>
 
