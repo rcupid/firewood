@@ -153,9 +153,14 @@ function deepCopy (obj) {
 ```
 
 ### [阿里云的抢占式示例注册过程]
-- [1]('../../images/aliyunesc/1.png')
-- [2]('../../images/aliyunesc/2.png')
-- [3]('../../images/aliyunesc/3.png')
-- [4]('../../images/aliyunesc/4.png')
-- [5]('../../images/aliyunesc/5.png')
-- [6]('../../images/aliyunesc/6.png')
+- ![1](../../images/aliyunesc/1.png)
+- 
+- ![2](../../images/aliyunesc/2.png)
+- 
+- ![3](../../images/aliyunesc/3.png)
+- 
+- ![4](../../images/aliyunesc/4.png)
+- 
+- ![5](../../images/aliyunesc/5.png)
+- 
+- ![6](../../images/aliyunesc/6.png)
