@@ -1,16 +1,46 @@
+//Promise/A+规范的三种状态
+const PENDING = 'pending'
+const FULFILLED = 'fulfilled'
+const REJECTED = 'rejected'
 
-const start = Date.now()
-new Promise((resolve, reject) => {
-  let end = Date.now()
-  while (end - start < 10) {
-    console.log(1);
-    end = Date.now()
+class MyPromise {
+  // 构造方法接收一个回调
+  constructor(executor) {
+    this.status = PENDING
+    this.resolveQueue = []
+    this.rejectQueue = []
+
+    let _resolve = (val) => {
+      if (this.status !== PENDING) { return }
+      this.status = FULFILLED
+      while (this.resolveQueue.length) {
+        const cb = this.resolveQueue.shift()
+        cb(val)
+      }
+    }
+
+    let _reject = (val) => {
+      if (this.status !== PENDING) { return }
+      this.status = REJECTED
+      while (this.rejectQueue.length) {
+        const cb = this.rejectQueue.shift()
+        cb(val)
+      }
+    }
+    executor(_resolve, _reject)
   }
-  resolve()
-})
 
-new Promise((resolve, reject) => {
-  console.log(2);
-  resolve()
+  then (resolveFn, rejectFn) {
+    this.resolveQueue.push(resolveFn)
+    this.rejectQueue.push(rejectFn)
+  }
+}
+//test
+const p1 = new MyPromise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('result')
+  }, 1000);
 })
+p1.then(res => console.log(res))
+
 
