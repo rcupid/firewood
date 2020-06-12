@@ -54,7 +54,7 @@ webpack-dev-server是一个小型的Node.js Express服务器,它使用webpack-de
 - 在webpack-dev-server的配置中添加：hot:true
 
 有一个疑问就是我们contentBase指定的静态资源路径下有一个index.html，并且打包出的结果页也有一个index.html，也就是两个文件路径访问的路径相同的话，会返回哪一个文件？    
-
+77
 　　结果就是会返回我们打包出的结果页面，静态资源的优先级是低于打包出的文件的。
 
 ### [socktIO](https://socket.io/get-started/chat/)
