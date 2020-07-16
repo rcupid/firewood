@@ -17,3 +17,4 @@
 ### [Rollup 笔记](https://blog.csdn.net/kw023781/article/details/107306699)
 ### [Rollup 插件](https://blog.csdn.net/mjzhang1993/article/details/78502168)
 ### [JS打包工具rollup——完全入门指南](https://blog.csdn.net/ztnhnr/article/details/88390807)
+### [Rollup实战笔记](https://chenshenhai.github.io/rollupjs-note/note/chapter02/01.html)
