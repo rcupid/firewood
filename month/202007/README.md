@@ -18,3 +18,48 @@
 ### [Rollup 插件](https://blog.csdn.net/mjzhang1993/article/details/78502168)
 ### [JS打包工具rollup——完全入门指南](https://blog.csdn.net/ztnhnr/article/details/88390807)
 ### [Rollup实战笔记](https://chenshenhai.github.io/rollupjs-note/note/chapter02/01.html)
+
+
+### [node-typescript-boilerplate](https://github.com/jsynowiec/node-typescript-boilerplate/blob/master/tsconfig.json)
+### [jest (ts-jest) 如何写ts测试](https://riptutorial.com/typescript/example/29207/jest--ts-jest-)
+
+### [前端工程师必备的TS知识点，不来看看？](https://mp.weixin.qq.com/s/Uh9TUkRwnOgk8c1hCirgXA)
+- 泛型
+- 接口
+- type用法
+
+### [如何让异步接口同时支持 callback 和 promise](https://mp.weixin.qq.com/s/A3I_dfiJOW3Eu1F6RdIZLw)
+### [前端算法入门](https://mp.weixin.qq.com/s/Ng1bqnmlotAz92OJhTbkjA)
+
+### [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333?_ea=3022967)
+### [JavaScript模块化CommonJS/AMD/CMD/UMD/ES6Module的区别](https://www.cnblogs.com/weiqinl/p/9940549.html#umd--webpack)
+- amd – 异步模块定义，用于像RequireJS这样的模块加载器
+- cjs – CommonJS，适用于 Node 和 Browserify/Webpack
+- esm – 将软件包保存为 ES 模块文件，在现代浏览器中可以通过 <script type=module> 标签引入
+- iife – 一个自动执行的功能，适合作为<script>标签。（如果要为应用程序创建一个捆绑包，您可能想要使用它，因为它会使文件大小变小。）
+- umd – 通用模块定义，以amd，cjs 和 iife 为一体
+- system - SystemJS 加载器格式
+```javascript
+// 使用Node, AMD 或 browser globals 模式创建模块
+(function (root, factory) {
+if (typeof define === 'function' && define.amd) {
+// AMD模式. 注册为一个匿名函数
+define(['b'], factory);
+} else if (typeof module === 'object' && module.exports) {
+// Node等类CommonJS的环境
+module.exports = factory(require('b'));
+} else {
+// 浏览器全局变量 (root is window)
+root.returnExports = factory(root.b);
+}
+}(typeof self !== 'undefined' ? self : this, function (b) {
+// 以某种方式使用 b
+
+//返回一个值来定义模块导出。(即可以返回对象，也可以返回函数)
+return {};
+}));
+```
+
+### [自定义Eslint规则](https://mp.weixin.qq.com/s/8QXQtF_aUV30OfRs0pKGBg)
+- espree 生成抽象语法树
+- astexplorer
