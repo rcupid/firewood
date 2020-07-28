@@ -63,3 +63,10 @@ return {};
 ### [自定义Eslint规则](https://mp.weixin.qq.com/s/8QXQtF_aUV30OfRs0pKGBg)
 - espree 生成抽象语法树
 - astexplorer
+
+
+### [Vue Diff算法](https://www.cnblogs.com/wind-lanyan/p/9061684.html)
+- vnode表示方法
+- diff的流程图
+- patch(oldNode,node)
+- updateChild()
