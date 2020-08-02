@@ -1,4 +1,4 @@
-### [组合式 API ](https://vue-composition-api-rfc.netlify.app/zh/#%E6%A6%82%E8%BF%B0)
+### [Vue 3.0文档](https://vue-composition-api-rfc.netlify.app/zh/#%E6%A6%82%E8%BF%B0)
 ### [When To Use The New Vue Composition API (And When Not To)](https://vuejsdevelopers.com/2020/02/17/vue-composition-api-when-to-use?utm_source=twitter-vjd&utm_medium=post&utm_campaign=m5a)
 - Vue 3.0文档
 
@@ -29,7 +29,11 @@
 - type用法
 
 ### [如何让异步接口同时支持 callback 和 promise](https://mp.weixin.qq.com/s/A3I_dfiJOW3Eu1F6RdIZLw)
+- callback 转成promise
+- promise转成callback
+
 ### [前端算法入门](https://mp.weixin.qq.com/s/Ng1bqnmlotAz92OJhTbkjA)
+- 讲解了一些概念
 
 ### [很全很全的JavaScript的模块讲解](https://segmentfault.com/a/1190000012464333?_ea=3022967)
 ### [JavaScript模块化CommonJS/AMD/CMD/UMD/ES6Module的区别](https://www.cnblogs.com/weiqinl/p/9940549.html#umd--webpack)
@@ -70,3 +74,22 @@ return {};
 - diff的流程图
 - patch(oldNode,node)
 - updateChild()
+
+### [防抖和节流](https://mp.weixin.qq.com/s/IvWGkm5pn3vjbLUB-SvXkQ)
+- 防抖 在setTimeout外面删除
+- 节流 在setTimeout 里面删除
+
+### [Docker不香吗，为啥还要K8s？](https://mp.weixin.qq.com/s/i_s-gUF53MGIEaLx_EWY3A)
+- 科普读物，讲解了常用术语
+
+
+### [如何修改 node_modules 里的文件](https://mp.weixin.qq.com/s/tjbgWCsRLXfoIQ7gPpTaEQ)
+- 利用webpack的alias 拦截个别文件路径
+
+### [babel原理](https://mp.weixin.qq.com/s/AFnAgHu5czxngeHypFLNAw)
+- loader本质
+- 解析(@babel/parser) 转换(@babel/travel) 生成(@babel/generate)
+
+### [腾讯十大开源项目出炉！](https://mp.weixin.qq.com/s/p971kAZMwmP2r66EwMi_qA)
+- 小程序组件化开发框架 wepy
+- 轻量级高性能的 Hybrid 框架 VasSonic
