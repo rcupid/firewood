@@ -33,17 +33,17 @@
 // console.log(result2);
 
 
-const reg = /(file:\/\/\/.*)\/([^ /]*)\/([^/]*)-\w{8}-hycache\.html(.*)/
-const baidu = encodeURIComponent('http://www.baidu.com?name=1')
+// const reg = /(file:\/\/\/.*)\/([^ /]*)\/([^/]*)-\w{8}-hycache\.html(.*)/
+// const baidu = encodeURIComponent('http://www.baidu.com?name=1')
 
-const str = `file:///var/mobile/Containers/Data/Application/45B7B9A7-50DE-429C-AB0E-DB822AC01218/Documents/hybrid_cache/webHtmlPath/kid-main-app/home-eb0978d1-hycache.html?zybhost=1&returnurl=${baidu}`
+// const str = `file:///var/mobile/Containers/Data/Application/45B7B9A7-50DE-429C-AB0E-DB822AC01218/Documents/hybrid_cache/webHtmlPath/kid-main-app/home-eb0978d1-hycache.html?zybhost=1&returnurl=${baidu}`
 
-const re = str.match(reg)
+// const re = str.match(reg)
 
-console.log(re);
-console.log(re[1]);
-console.log(re[2])
-console.log(re[3])
+// console.log(re);
+// console.log(re[1]);
+// console.log(re[2])
+// console.log(re[3])
 
 // function getLocationHref() {
 //   const { href } = window.location
@@ -62,6 +62,23 @@ console.log(re[3])
 //   const { pathname, search } = window.location
 //   return `${pathname}${search}`
 // }
+
+
+// const reg = /^(https|http):\/\/(www.zuoyebang.com)\/static\/hy\/sell-payment\/add-order.html(.*)/
+const reg = /^(https|http):\/\/(.*)\/static\/hy\/sell-payment\/add-order.html(.*)/
+const str = 'https://www.zuoyebang.com/static/hy/sell-payment/add-order.html?purchaseMode=1'
+// console.log(encodeURIComponent(encodeURIComponent(str)))
+const purchaseModeReg = /(.*)?(.*)purchaseMode=1(.*)/
+
+const re = str.match(reg)
+console.log(re);
+let http = re[1]
+let domain = re[2]
+let query = re[3]
+
+console.log(purchaseModeReg.test(str))
+console.log(http, domain, query);
+
 
 
 
