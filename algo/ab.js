@@ -11,7 +11,7 @@ var lengthOfLongestSubstring = function (s) {
     }
     res = Math.max(res, temp.length)
     i++
-  }
+  } git
   return res
 
   // 下面这种方法不可以的原因是 什么
