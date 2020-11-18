@@ -17,7 +17,7 @@ pm2 start app.yml
 [Mac下Docker安装MySql、操作MySql](https://www.jianshu.com/p/d211fec2f34a)  
 [mac下利用docker部署个Mysql](https://www.jianshu.com/p/83ecd99cf3eb)  
 [Mac Docker 安装 MySQL](https://www.kefaming.com/9910.html)  
-[2019-01-11亲测Navicat Premium for Mac破解](https://www.jianshu.com/p/4e93b48f9f63)  
+[2019-01-11亲测Navicat Premium for Mac破解](https://www.jianshu.com/p/add76d51931c)  
 [Docker常用命令汇总，和常用操作举例](https://www.cnblogs.com/cblogs/p/dockerCommand.html)
 
 ```bash
