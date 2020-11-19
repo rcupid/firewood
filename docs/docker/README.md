@@ -19,6 +19,10 @@ pm2 start app.yml
 [Mac Docker 安装 MySQL](https://www.kefaming.com/9910.html)  
 [2019-01-11亲测Navicat Premium for Mac破解](https://www.jianshu.com/p/add76d51931c)  
 [Docker常用命令汇总，和常用操作举例](https://www.cnblogs.com/cblogs/p/dockerCommand.html)
+[centos安装mysql](https://juejin.im/post/6844903870053761037)
+
+[新版myql授权用户](https://techlog.cn/article/list/10183260)
+[navicat连接阿里云ESC里的数据库](https://developer.aliyun.com/article/656996)
 
 ```bash
 $ docker exec -it 6d5388599bda /bin/bash
@@ -28,7 +32,7 @@ docker run --name mysqlserver -e MYSQL_ROOT_PASSWORD=root -d -i -p 3306:3306  my
 mysql -u root -p  123456;
 #密码：123456 // 123456是密码
 
-mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456
+mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '1234561';
 ```
 
 ### 全站的思维脑图
