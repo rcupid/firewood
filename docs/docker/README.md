@@ -25,9 +25,19 @@ pm2 start app.yml
 [navicat连接阿里云ESC里的数据库](https://developer.aliyun.com/article/656996)
 
 ```bash
-$ docker exec -it 6d5388599bda /bin/bash
+docker run --name mysqlserver -e MYSQL_ROOT_PASSWORD=root -d -i -p 3306:3306  mysql
+docker run -p 3306:3306 --name qmm-mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=669988  -d mysql:5.6
+# 创建容器时，最后mysql:5.6表示mysql镜像的版本，可以写，表示指定该版本；如果不写也可以，docker会自动在本地检测有没有最新的，如果没有会自动去docker hub上去下载。
 
-docker run --name mysqlserver -e MYSQL_ROOT_PASSWORD=root -d -i -p 3306:3306  mysql/mysql-server
+# run                 运行一个docker容器
+# --name           后面这个是生成的容器的名字qmm-mysql
+# -p 3306:3306  表示这个容器中使用3306（第二个）映射到本机的端口号也为3306（第一个） 
+# -e MYSQL_ROOT_PASSWORD=123456  初始化root用户的密码
+# -d                   表示使用守护进程运行，即服务挂在后台
+
+$ docker run --name nest-demo-project -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql
+
+$ docker exec -it 6d5388599bda /bin/bash
 
 mysql -u root -p  123456;
 #密码：123456 // 123456是密码
