@@ -21,7 +21,7 @@ pm2 start app.yml
 [Docker常用命令汇总，和常用操作举例](https://www.cnblogs.com/cblogs/p/dockerCommand.html)
 [centos安装mysql](https://juejin.im/post/6844903870053761037)
 
-[新版myql授权用户](https://techlog.cn/article/list/10183260)
+[新版myql授权用户新版 mysql 授权用户时报错](https://techlog.cn/article/list/10183260)
 [navicat连接阿里云ESC里的数据库](https://developer.aliyun.com/article/656996)
 
 ```bash
@@ -42,7 +42,12 @@ $ docker exec -it 6d5388599bda /bin/bash
 mysql -u root -p  123456;
 #密码：123456 // 123456是密码
 
-mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '1234561';
+mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+# 新版本 https://techlog.cn/article/list/10183260
+create  user 'root'@'localhost' identified by '123456';
+
+grant all privileges on *.* to 'root'@'%' with grant option;
+
 ```
 
 ### 全站的思维脑图
