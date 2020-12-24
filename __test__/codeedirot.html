@@ -1,0 +1,31 @@
+<!--
+最简单的CodeMirror编辑器
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<!--下面两个是使用Code Mirror必须引入的-->
+<link rel="stylesheet" href="codemirror-5.12/lib/codemirror.css">
+<script src="codemirror-5.12/lib/codemirror.js"></script>
+
+<!--Java代码高亮必须引入-->
+<script src="codemirror-5.12/clike.js"></script>
+
+<head>
+  <title>CodeMirrorTest</title>
+</head>
+
+<body>
+  <textarea id="code"></textarea>
+</body>
+<script type="text/javascript">
+  //根据DOM元素的id构造出一个编辑器
+  var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    mode: "text/x-java", //实现Java代码高亮
+    lineNumbers: true
+  });
+</script>
+
+</html>
