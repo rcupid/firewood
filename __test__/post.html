@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="div"></div>
+  <button id="btn">点击</button>
+
+  <script>
+
+    let href = window.location.href
+    console.log(href);
+    document.getElementById('btn').addEventListener('click', () => {
+      let url = href.includes('?') ? `${href}&${+new Date()}=${+new Date()}` : `${href}?${+new Date()}=${+new Date()}`
+
+      window.history.pushState({
+        href
+      }, null, url)
+    })
+
+    window.addEventListener('popstate', (e) => {
+      console.log(e);
+    });
+
+    document.getElementById('div').innerHTML = +new Date()
+  </script>
+</body>
+
+</html>
