@@ -17,18 +17,37 @@ pm2 start app.yml
 [Mac下Docker安装MySql、操作MySql](https://www.jianshu.com/p/d211fec2f34a)  
 [mac下利用docker部署个Mysql](https://www.jianshu.com/p/83ecd99cf3eb)  
 [Mac Docker 安装 MySQL](https://www.kefaming.com/9910.html)  
-[2019-01-11亲测Navicat Premium for Mac破解](https://www.jianshu.com/p/4e93b48f9f63)  
+[2019-01-11亲测Navicat Premium for Mac破解](https://www.jianshu.com/p/add76d51931c)  
 [Docker常用命令汇总，和常用操作举例](https://www.cnblogs.com/cblogs/p/dockerCommand.html)
+[centos安装mysql](https://juejin.im/post/6844903870053761037)
+
+[新版myql授权用户新版 mysql 授权用户时报错](https://techlog.cn/article/list/10183260)
+[navicat连接阿里云ESC里的数据库](https://developer.aliyun.com/article/656996)
 
 ```bash
-$ docker exec -it 6d5388599bda /bin/bash
+docker run --name mysqlserver -e MYSQL_ROOT_PASSWORD=root -d -i -p 3306:3306  mysql
+docker run -p 3306:3306 --name qmm-mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=669988  -d mysql:5.6
+# 创建容器时，最后mysql:5.6表示mysql镜像的版本，可以写，表示指定该版本；如果不写也可以，docker会自动在本地检测有没有最新的，如果没有会自动去docker hub上去下载。
 
-docker run --name mysqlserver -e MYSQL_ROOT_PASSWORD=root -d -i -p 3306:3306  mysql/mysql-server
+# run                 运行一个docker容器
+# --name           后面这个是生成的容器的名字qmm-mysql
+# -p 3306:3306  表示这个容器中使用3306（第二个）映射到本机的端口号也为3306（第一个） 
+# -e MYSQL_ROOT_PASSWORD=123456  初始化root用户的密码
+# -d                   表示使用守护进程运行，即服务挂在后台
+
+$ docker run --name nest-demo-project -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql
+
+$ docker exec -it 6d5388599bda /bin/bash
 
 mysql -u root -p  123456;
 #密码：123456 // 123456是密码
 
-mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456
+mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+# 新版本 https://techlog.cn/article/list/10183260
+create  user 'root'@'localhost' identified by '123456';
+
+grant all privileges on *.* to 'root'@'%' with grant option;
+
 ```
 
 ### 全站的思维脑图
