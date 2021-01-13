@@ -30,7 +30,7 @@ class MyPromise {
     executor(_resolve, _reject)
   }
 
-  then (resolveFn, rejectFn) {
+  then(resolveFn, rejectFn) {
     this.resolveQueue.push(resolveFn)
     this.rejectQueue.push(rejectFn)
   }
@@ -39,8 +39,21 @@ class MyPromise {
 const p1 = new MyPromise((resolve, reject) => {
   setTimeout(() => {
     resolve('result')
-  }, 1000);
+  }, 1000)
 })
 p1.then(res => console.log(res))
 
 
+
+
+function curry(fn) {
+  let args = []
+  return function temp(...newArgs) {
+    if (newArgs.length) {
+      args = [...args, ...newArgs]
+      return temp
+    } else {
+      return fn.apply(null, args)
+    }
+  }
+}
