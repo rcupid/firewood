@@ -1,4 +1,13 @@
 ```javascript
+//input
+console.log('123')
+console.error('dddd')
+//output
+console.warn('123')
+console.error('dddd')
+```
+
+```javascript
 module.exports = function (
   fileInfo, // 当前处理文件的相关信息，包括文件路径与内容
   api, // jscodeshift 提供的接口
