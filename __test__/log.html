@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      border: 1px solid #ddd;
+      width: 500px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, rgba(242, 128, 43, 1) 0%, rgba(248, 95, 36, 1) 21%, rgba(248, 91, 34, 1) 100%);
+      border-radius: 100px 100px 24px 24px;
+    }
+
+    .innner {
+      background-color: transparent;
+    }
+
+    p {
+      line-height: 50px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="inner">
+      <p>name</p>
+      <p>name</p>
+    </div>
+  </div>
+  <script>
+    const obj = Object.create(null)
+
+    obj["b"] = 1
+    obj["a"] = 2
+    console.log(obj);
+    console.log(Object.keys(obj));//[b, a]
+
+
+    const map = new Map()
+    map.set('b', 5)
+    map.set('a', 4)
+    console.log(map);
+    console.log(map.keys().next().value);
+
+
+  </script>
+</body>
+
+</html>

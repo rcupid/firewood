@@ -1,0 +1,192 @@
+{
+  "errNo": 0,
+  "errstr": "success",
+  "data": {
+    "isLogin": 1,
+    "studentUid": 2000063575,
+    "openId": "",
+    "notice": "",
+    "isBindPhone": 1,
+    "isPinTuan": 0,
+    "teamStId": 0,
+    "currencyToPay": 0,
+    "totalPrice": 0,
+    "totalDiscountPrice": 100,
+    "totalOriginalPrice": 100,
+    "totalTailPrice": 0,
+    "itemBlock": {
+      "skuInfo": [
+        {
+          "skuId": 10091025,
+          "name": "教辅-1元班课-折扣0.01元-买就送",
+          "showName": "教辅-1元班课-折扣0.01元-买就送",
+          "img": "",
+          "tags": [],
+          "classTimeInfo": "12月26日开课"
+        }
+      ]
+    },
+    "allSkuId": "10091025",
+    "skuList": [
+      {
+        "skuId": 10091025,
+        "spuId": 2016304,
+        "courseId": 279420,
+        "seasonId": "33",
+        "gradeId": "16",
+        "subjectOne": "数",
+        "name": "教辅-1元班课-折扣0.01元-买就送",
+        "oriPrice": 100,
+        "price": 100,
+        "prePrice": 0,
+        "discountPrice": 99,
+        "couponId": 0,
+        "couponType": 2,
+        "canUseCoupon": 1,
+        "canUseCouponCnt": 1,
+        "ext": "12月26日  ·  13500000001",
+        "costPrice": 0,
+        "couponDiscountPrice": 0,
+        "couponDescText": "",
+        "courseType": 2,
+        "isPinTuan": 0,
+        "teamStId": 0,
+        "playType": 1,
+        "orderCouponId": "604d56d3d506e2ea2ff5c529757b9dc4",
+        "orderCouponDiscountPrice": 1,
+        "couponList": [
+          {
+            "couponId": "3090dd372478783049b6555df8d65bdf",
+            "createTime": 1592291058,
+            "discount": 15000,
+            "discountText": "150",
+            "unit": "元",
+            "oriUnit": 1,
+            "type": "现金券",
+            "desc": "课程券150元",
+            "startTime": "2020.06.16",
+            "endTime": "2020.07.06",
+            "endTimeReal": 1594019058,
+            "status": 1,
+            "priceRuleDesc": "无门槛",
+            "couponType": 1,
+            "leftTime": "5天",
+            "tmpInvalid": 0,
+            "expiryDateText": "2020.06.16  -  2020.07.06",
+            "rulesText": "仅限  非特惠课可用",
+            "priceRuleText": "现金券",
+            "realDiscountPrice": 15000,
+            "countDownHighlight": 0,
+            "usedByOthers": 0,
+            "usedByCurrent": 0
+          }
+        ],
+        "unMatchCouponList": []
+      }
+    ],
+    "isFold": false,
+    "giftList": {
+      "giftGoodsInfo": [
+        {
+          "skuId": 10091009,
+          "courseName": "2020韦宁班级",
+          "onlineTime": "7月27日  ·  刘配",
+          "remindText": "",
+          "subjectOne": "语",
+          "subjectId": 1,
+          "teacherName": "",
+          "classTimeInfo": "7月27日开课  共1次课",
+          "gradeId": "11",
+          "img": "https://yy-s.zuoyebang.cc/static/yike_thkyywl/ZSK.png",
+          "spuId": 2016581
+        },
+        {
+          "skuId": 10091012,
+          "courseName": "【小数】跟课升级5",
+          "onlineTime": "6月29日-7月10日  ·  共2次课  ·  18390005030",
+          "remindText": "",
+          "subjectOne": "数",
+          "subjectId": 2,
+          "teacherName": "",
+          "classTimeInfo": "6月29日开课 共2次课",
+          "gradeId": "14",
+          "img": "https://yy-s.zuoyebang.cc/static/yike_thkyywl/ZSK.png",
+          "spuId": 2016360
+        }
+      ],
+      "giftEntityInfo": [
+        {
+          "productId": 2001445,
+          "productName": "心怡舱的采购品",
+          "content": "都开始撒双方开始",
+          "price": 300,
+          "num": 1,
+          "productImage": [
+            "https://testimg.zuoyebang.cc/qa_4e9375746efddcd02b7788ea591a5785.png"
+          ]
+        },
+        {
+          "productId": 2001380,
+          "productName": "测试一课教具",
+          "content": "编辑更新",
+          "price": 9089,
+          "num": 2,
+          "productImage": [
+            "https://testimg.zuoyebang.cc/qa_355d53176644a68ccb5ce1ea1961bb08.png"
+          ]
+        }
+      ]
+    },
+    "isCouponShow": 1,
+    "couponList": {
+      "num": 0,
+      "discountPrice": 0,
+      "hasValidCoupon": 1,
+      "validNum": 1
+    },
+    "orderCouponList": {
+      "couponList": [
+        {
+          "couponId": "604d56d3d506e2ea2ff5c529757b9dc4",
+          "discount": 10000,
+          "discountText": "100",
+          "unit": "元",
+          "desc": "订单券100元",
+          "rulesText": "仅限 非特惠课可用",
+          "startTime": "2020.06.16",
+          "endTime": "2020.07.06",
+          "status": 1,
+          "leftTime": "5天",
+          "expiryDateText": "2020.06.16 - 2020.07.06",
+          "priceRuleDesc": "无门槛",
+          "countDownHighlight": 0,
+          "usedByCurrent": 1
+        }
+      ],
+      "unMatchCouponList": [],
+      "orderCouponId": "604d56d3d506e2ea2ff5c529757b9dc4",
+      "discountPrice": 1,
+      "num": 1
+    },
+    "finalAddressPostposition": 0,
+    "needAddress": 1,
+    "addressInfo": "",
+    "addressPageUrl": "https://fall-docker.suanshubang.com/static/hy/yike-sell-app-vue/receive-address-list.html",
+    "isShowPhoneText": 0,
+    "logisticsText": "",
+    "toastData": null,
+    "serviceList": {
+      "tags": []
+    },
+    "timestamp": 1593588831,
+    "payExpireTime": 0,
+    "requestNo": "82899b8919e02cfd005aa11d84908258",
+    "sign": "8BF0121E863483CF0BADEE8E2D4B4B5F",
+    "purchaseData": "{'skuList':{'10091025':{'skuId':10091025,'price':100,'prePrice':0,'discountPrice':99,'couponDiscountPrice':1,'costPrice':0,'couponId':'604d56d3d506e2ea2ff5c529757b9dc4','teamStId':0,'payTime':0}},'total':{'totalPrice':0,'totalOriginalPrice':100,'totalPrePrice':0,'totalDiscountPrice':100},'bizInfo':{'bizVersion':201908,'giftInfoList':[{'giftId':'10088175','giftCnt':'1','giftType':1,'isTimeLimit':0,'startTime':0,'stopTime':0,'discountBizId':8967,'activityId':1468,'bizType':3,'isSend':1},{'giftId':'10088174','giftCnt':'1','giftType':1,'isTimeLimit':0,'startTime':0,'stopTime':0,'discountBizId':8967,'activityId':1468,'bizType':3,'isSend':1},{'giftId':'10091009','giftCnt':1,'giftType':2,'isTimeLimit':0,'startTime':0,'stopTime':0,'discountBizId':8968,'activityId':1468,'bizType':3,'isSend':1},{'giftId':'10091012','giftCnt':1,'giftType':2,'isTimeLimit':0,'startTime':0,'stopTime':0,'discountBizId':8968,'activityId':1468,'bizType':3,'isSend':1}],'discountBizMap':{'8966':[10091025],'8967':[10091025],'8968':[10091025]}},'skuIdList':[10091025,10091009,10091012]}",
+    "unPaidOrderId": 1111,
+    "remainNum": "51"
+  },
+  "logId": "2031087649",
+  "beidouUrl": "http://beidou.zuoyebang.cc/dockerdiagnose?logId=2031087649",
+  "cost": 0
+}
