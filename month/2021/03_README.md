@@ -32,5 +32,9 @@
 
 
 ### [插件机制](https://juejin.cn/post/6935261498822361119?utm_source=gold_browser_extension)
-
 ### [代码自动化重构利器——jscodeshift 初探](https://zhuanlan.zhihu.com/p/353940140)
+### [CollectionApi](https://github.com/facebook/jscodeshift/wiki/jscodeshift-Documentation)
+### [Node](https://github.com/facebook/jscodeshift/blob/master/src/collections/Node.js)
+### [jscodeshift 入门指南](https://tianqi.name/blog/2018/01/12/jscodeshift.html)
+### [@babel/types](https://babeljs.io/docs/en/babel-types)
+### [jscodeshift简易教程](https://www.cnblogs.com/axes/p/7694041.html)
