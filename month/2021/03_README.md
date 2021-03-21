@@ -4,7 +4,7 @@
  * @Author: liujianwei1
  * @Date: 2021-03-21 10:38:22
  * @LastEditors: liujianwei1
- * @LastEditTime: 2021-03-21 11:24:26
+ * @LastEditTime: 2021-03-21 11:27:57
  * @FilePath: /firewood/month/2021/03_README.md
  * @Reference: 
 -->
@@ -51,5 +51,8 @@
 
 ### [axios adapter](https://github.com/axios/axios)
 ### [axios 原理](https://blog.csdn.net/mmjinglin/article/details/82761126)
+### [自定义适配器adapter](https://www.cnblogs.com/xumengxuan/p/13876906.html)
+### [Axios adapter 实现缓存接口数据](https://blog.csdn.net/DongFuPanda/article/details/109091004)
 - axios 真正请求的部分是 adpter
 - 拦截器的原理是定义了一个 数组，编排顺序
+- 自定义适配器，使用的两种方式
