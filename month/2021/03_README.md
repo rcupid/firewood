@@ -1,3 +1,13 @@
+<!--
+ * @Description: 
+ * @Version: 1.0
+ * @Author: liujianwei1
+ * @Date: 2021-03-21 10:38:22
+ * @LastEditors: liujianwei1
+ * @LastEditTime: 2021-03-21 11:24:26
+ * @FilePath: /firewood/month/2021/03_README.md
+ * @Reference: 
+-->
 ### [Module模块加载](https://wangdoc.com/es6/module-loader.html)
 ### [理解import.meta.url的含义](https://jakedeichert.com/blog/2020/02/a-super-hacky-alternative-to-import-meta-url/)
 - 浏览器加载
@@ -38,3 +48,8 @@
 ### [jscodeshift 入门指南](https://tianqi.name/blog/2018/01/12/jscodeshift.html)
 ### [@babel/types](https://babeljs.io/docs/en/babel-types)
 ### [jscodeshift简易教程](https://www.cnblogs.com/axes/p/7694041.html)
+
+### [axios adapter](https://github.com/axios/axios)
+### [axios 原理](https://blog.csdn.net/mmjinglin/article/details/82761126)
+- axios 真正请求的部分是 adpter
+- 拦截器的原理是定义了一个 数组，编排顺序
