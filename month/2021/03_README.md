@@ -3,8 +3,8 @@
  * @Version: 1.0
  * @Author: liujianwei1
  * @Date: 2021-03-21 10:38:22
- * @LastEditors: liujianwei1
- * @LastEditTime: 2021-03-22 18:06:19
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-03-22 18:50:23
  * @FilePath: /firewood/month/2021/03_README.md
  * @Reference: 
 -->
@@ -22,7 +22,7 @@
 - ES6 模块加载 CommonJS 模块
 - 同时支持两种格式的模块
 - Node.js 的内置模块
-- 加载路径
+- 加载路径1
 - 内部变量
 - 循环加载
 - CommonJS 模块的加载原理
@@ -57,7 +57,7 @@
 - 拦截器的原理是定义了一个 数组，编排顺序
 - 自定义适配器，使用的两种方式
 
-## 微前端资料1233
+## 微前端资料
 ### [微前端路由](https://blog.csdn.net/weixin_43825389/article/details/109313017)
 ### [微前端实战](https://juejin.cn/post/6844904042427056142)
 ### [wl-mfe](https://github.com/wl-ui/wl-mfe)
