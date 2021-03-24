@@ -4,7 +4,7 @@
  * @Author: liujianwei1
  * @Date: 2021-03-21 10:38:22
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-03-22 18:56:58
+ * @LastEditTime: 2021-03-24 10:29:18
  * @FilePath: /firewood/month/2021/03_README.md
  * @Reference: 
 -->
@@ -48,6 +48,8 @@
 ### [jscodeshift 入门指南](https://tianqi.name/blog/2018/01/12/jscodeshift.html)
 ### [@babel/types](https://babeljs.io/docs/en/babel-types)
 ### [jscodeshift简易教程](https://www.cnblogs.com/axes/p/7694041.html)
+### [jscodeshift简易教程应用](https://mp.weixin.qq.com/s/9-_n-Hsa32Sp0W08vi-nzw)
+- 利用抽象语法书替换内容
 
 ### [axios adapter](https://github.com/axios/axios)
 ### [axios 原理](https://blog.csdn.net/mmjinglin/article/details/82761126)
@@ -62,3 +64,4 @@
 ### [微前端实战](https://juejin.cn/post/6844904042427056142)
 ### [wl-mfe](https://github.com/wl-ui/wl-mfe)
 ### [微前端实战：qiankun+Vue 掘金重构计划 | 🏆 技术专题第四期征文](https://juejin.cn/post/6874213637687345159)  
+- 文档内容较少，需要多写demo尝试
