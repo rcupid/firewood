@@ -1,4 +1,39 @@
 <!--
+ * @Desc: 
+ * @Version: 1.0
+ * @Author: liujianwei1
+ * @Date: 2021-03-21 10:38:22
+ * @LastEditors: liujianwei1
+ * @LastEditTime: 2021-03-31 14:11:19
+ * @Modified Desc: 
+-->
+<!--
+ * 
+ * 　　┏┓　　　┏┓+ +
+ * 　┏┛┻━━━┛┻┓ + +
+ * 　┃　　　　　　　┃ 　
+ * 　┃　　　━　　　┃ ++ + + +
+ *  ████━████ ┃+
+ * 　┃　　　　　　　┃ +
+ * 　┃　　　┻　　　┃
+ * 　┃　　　　　　　┃ + +
+ * 　┗━┓　　　┏━┛
+ * 　　　┃　　　┃　　　　　　　　　　　
+ * 　　　┃　　　┃ + + + +
+ * 　　　┃　　　┃
+ * 　　　┃　　　┃ +  神兽保佑
+ * 　　　┃　　　┃    代码无bug　　
+ * 　　　┃　　　┃　　+　　　　　　　　　
+ * 　　　┃　 　　┗━━━┓ + +
+ * 　　　┃ 　　　　　　　┣┓
+ * 　　　┃ 　　　　　　　┏┛
+ * 　　　┗┓┓┏━┳┓┏┛ + + + +
+ * 　　　　┃┫┫　┃┫┫
+ * 　　　　┗┻┛　┗┻┛+ + + +
+ * 
+ -->
+
+<!--
  * @Description: 
  * @Version: 1.0
  * @Author: liujianwei1
@@ -66,3 +101,8 @@
 ### [qiankun 微前端方案实践及总结](https://juejin.cn/post/6844904185910018062#heading-17)
 ### [含有路由设计](https://juejin.cn/post/6844904158185668616#heading-7)
 - 文档内容较少，需要多写demo尝试
+
+
+## Vue动态加载组件
+### [组件HOC](https://juejin.cn/post/6844904116603486221)
+### [动态注册组件](https://zhuanlan.zhihu.com/p/35535469)

@@ -1,3 +1,12 @@
+<!--
+ * @Desc: 
+ * @FilePath: /firewood/__test__/dd.html
+ * @Author: liujianwei1
+ * @Date: 2021-03-21 10:38:22
+ * @LastEditors: liujianwei1
+ * @LastEditTime: 2021-04-07 14:20:51
+ * @Reference Desc: 
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +18,27 @@
 </head>
 
 <body>
-  <a href="https://www.zybang.com/zuoyebang/airclass/agreement/user-agreement.html">新标签页面</a>
-  <script src="./11.js"></script>
+  <script>
+    // function sayHello() {
+    //   console.log('hello');
+    // }
+
+    // document.body.addEventListener('click', sayHello);
+    // // 使用处理程序多次注册同一事件，只当注册一次
+    // document.body.addEventListener('click', sayHello);
+
+    // document.body.click(); // => hello ：只输出一遍
+
+    document.body.addEventListener('click', function (e) {
+      console.log('1');
+    });
+
+    document.body.addEventListener('click', function (e) {
+      console.log('2');
+    });
+
+    document.body.click(); // => 1,2
+  </script>
 </body>
 
 </html>

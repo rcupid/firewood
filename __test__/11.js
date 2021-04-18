@@ -1,42 +1,24 @@
-// var x = 3
-// var y = 4
-// let aaaa = 1
-// var bbbb = 1
-// console.log(window)
-// var obj = {
-//   x: 1,
-//   y: 6,
-//   getX: function () {
-//     var x = 5
-//     console.log(this)
-//     return (function () {
-//       console.log(this)
-//       return this.x
-//     })()
-//     // return (() => {
-//     //   console.log(this)
-//     //   return this.x
-//     // })()
-//     // return function () {
-//     //   console.log(this)
-//     //   return this.x
-//     // }()
-//   },
-//   getY: function () {
-//     var y = 7
-//     return this.y
-//   }
-// }
-
-// console.log(obj.getX())//3
-// console.log(obj.getY())
-
-var F = function () { }
-Object.prototype.a = function () { console.log('a') }
-Function.prototype.b = function () { console.log('b') }
-
-var f = new F()
-console.log('0', F.b())
-console.log('1', f)
-console.log('2', f.a())
-console.log('3', f.b())
+/*
+ * @Desc: 
+ * @FilePath: /firewood/__test__/11.js
+ * @Author: liujianwei1
+ * @Date: 2021-03-21 10:38:22
+ * @LastEditors: liujianwei1
+ * @LastEditTime: 2021-04-08 20:47:46
+ * @Reference Desc: 
+ */
+let arr = [1, 2, 3, 4, 5]
+let ret = 0
+for (const outer of arr) {
+  if (ret === 2) {
+    break
+  }
+  console.log(`outer=${outer}`)
+  for (const inner of arr) {
+    console.log(`inner=${inner}`)
+    if (inner === 2) {
+      ret = 2
+      break
+    }
+  }
+}
