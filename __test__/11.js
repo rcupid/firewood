@@ -1,24 +1,21 @@
-/*
- * @Desc: 
- * @FilePath: /firewood/__test__/11.js
- * @Author: liujianwei1
- * @Date: 2021-03-21 10:38:22
- * @LastEditors: liujianwei1
- * @LastEditTime: 2021-04-08 20:47:46
- * @Reference Desc: 
- */
-let arr = [1, 2, 3, 4, 5]
-let ret = 0
-for (const outer of arr) {
-  if (ret === 2) {
-    break
-  }
-  console.log(`outer=${outer}`)
-  for (const inner of arr) {
-    console.log(`inner=${inner}`)
-    if (inner === 2) {
-      ret = 2
-      break
-    }
+
+// 数据存储
+const cache = {
+  data: {},
+  set (key, data) {
+    this.data[key] = data
+  },
+  get (key) {
+    return this.data[key]
+  },
+  clear (key) {
+    delete this.data[key]
   }
 }
+
+const key = "94207a19c6eff58128da2f92f32f61cc"
+cache.set(key, 1)
+setTimeout(() => {
+  cache.clear(key)
+  console.log(cache)
+}, 3000)
