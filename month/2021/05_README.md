@@ -1,11 +1,12 @@
 <!--
- * @Desc: May
+ * @Desc: 
  * @FilePath: /firewood/month/2021/05_README.md
  * @Author: liujianwei1
  * @Date: 2021-05-06 11:42:46
  * @LastEditors: liujianwei1
  * @Reference Desc: 
 -->
+
 ### [在Vue中使用JSX的正确姿势](https://zhuanlan.zhihu.com/p/37920151)
 - Vue的属性有三种 props，普通属性 attrs,Dom属性 domProps。通过正则表达式区分，所以属性，不要on开头
 - onXXX的均被认为是事件，nativeOnXXX是原生事件，domPropsXXX是Dom属性
