@@ -36,3 +36,10 @@ C类地址：192.168.0.0～192.168.255.255
 ```
 
 ### [Linux配置内网DNS、域名解析](https://www.jianshu.com/p/f720f00d1dcb)
+
+### [Vue服务端渲染的基本实现【Vue】](https://www.bilibili.com/video/BV1qz4y1d7Lr?p=4)
+- vue ssr原理讲解的很清楚。
+- server.js 的入口文件 会同时产生html和js，产生的html不要添加server.js文件 webpack的htmlpuligin中排除掉。这个在vue.config.js target：node的时候已经做了
+- client.js 激活服务端
+- index.js 服务器 启动页面 需要配置 server.js 打包后的json文件
+- 静态资源提供 static client

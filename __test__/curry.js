@@ -1,20 +1,36 @@
-if (i === len - 1) {
-  const { size, height } = this.multiEntryTops[i - 1];
-  const miniDistance = scrollTop + this.headerTop + (height / size) - this.multiEntryTops[i].top;
-  if (miniDistance >= 0) {
-    index = i;
-  }
-} else {
-  const { size, height } = this.multiEntryTops[i - 1];
-  // const miniDistance = scrollTop + this.headerTop + (height / size) - this.multiEntryTops[i].top;
-  const miniDistance = scrollTop + this.headerTop - this.multiEntryTops[i].top;
-  if (miniDistance >= 0 && (scrollTop < this.multiEntryTops[i + 1].top - this.headerTop)) {
-    index = i;
-  }
-}
+/*
+ *                        ::
+ *                       :;J7, :,                        ::;7:
+ *                       ,ivYi, ,                       ;LLLFS:
+ *                       :iv7Yi                       :7ri;j5PL
+ *                      ,:ivYLvr                    ,ivrrirrY2X,
+ *                      :;r@Wwz.7r:                :ivu@kexianli.
+ *                     :iL7::,:::iiirii:ii;::::,,irvF7rvvLujL7ur
+ *                    ri::,:,::i:iiiiiii:i:irrv177JX7rYXqZEkvv17
+ *                 ;i:, , ::::iirrririi:i:::iiir2XXvii;L8OGJr71i
+ *               :,, ,,:   ,::ir@mingyi.irii:i:::j1jri7ZBOS7ivv,
+ *                  ,::,    ::rv77iiiriii:iii:i::,rvLq@huhao.Li
+ *              ,,      ,, ,:ir7ir::,:::i;ir:::i:i::rSGGYri712:
+ *            :::  ,v7r:: ::rrv77:, ,, ,:i7rrii:::::, ir7ri7Lri
+ *           ,     2OBBOi,iiir;r::        ,irriiii::,, ,iv7Luur:
+ *         ,,     i78MBBi,:,:::,:,  :7FSL: ,iriii:::i::,,:rLqXv::
+ *         :      iuMMP: :,:::,:ii;2GY7OBB0viiii:i:iii:i:::iJqL;::
+ *        ,     ::::i   ,,,,, ::LuBBu BBBBBErii:i:i:i:i:i:i:r77ii
+ *       ,       :       , ,,:::rruBZ1MBBqi, :,,,:::,::::::iiriri:
+ *      ,               ,,,,::::i:  @arqiao.       ,:,, ,:::ii;i7:
+ *     :,       rjujLYLi   ,,:::::,:::::::::,,   ,:i,:,,,,,::i:iii
+ *     ::      BBBBBBBBB0,    ,,::: , ,:::::: ,      ,,,, ,,:::::::
+ *     i,  ,  ,8BMMBBBBBBi     ,,:,,     ,,, , ,   , , , :,::ii::i::
+ *     :      iZMOMOMBBM2::::::::::,,,,     ,,,,,,:,,,::::i:irr:i:::,
+ *     i   ,,:;u0MBMOG1L:::i::::::  ,,,::,   ,,, ::::::i:i:iirii:i:i:
+ *     :    ,iuUuuXUkFu7i:iii:i:::, :,:,: ::::::::i:i:::::iirr7iiri::
+ *     :     :rk@Yizero.i:::::, ,:ii:::::::i:::::i::,::::iirrriiiri::,
+ *      :      5BMBBBBBBSr:,::rv2kuii:::iii::,:i:,, , ,,:,:i@petermu.,
+ *           , :r50EZ8MBBBBGOBBBZP7::::i::,:::::,: :,:,::i;rrririiii::
+ *               :jujYY7LS0ujJL7r::,::i::,::::::::::::::iirirrrrrrr:ii:
+ *            ,:  :@kevensun.:,:,,,::::i:i:::::,,::::::iir;ii;7v77;ii;i,
+ *            ,,,     ,,:,::::::i:iiiii:i::::,, ::::iiiir@xingjief.r;7:i,
+ *         , , ,,,:,,::::::::iiiiiiiiii:,:,:::::::::iiir;ri7vL77rrirri::
+ *          :,, , ::::::::i:::i:::i:i::,,,,,:,::i:i:::iir;@Secbone.ii:::
+ */
 
-https://h5-sell.zuoyebang.com/static/hy/sell-payment/add-order.html?H5WebPageV=1.5&ZybDisableSlipBack=1&ZybHideTitle=1&__track__=sell-cart-sku-sheet&appId=homework&appid=homework&cacheStrategy=2&channel=appstore&city=%E5%8C%97%E4%BA%AC%E5%B8%82&courseInfo=%5B%7B%22courseId%22%3A2195144%2C%22couponId%22%3A0%7D%2C%7B%22courseId%22%3A2202179%2C%22couponId%22%3A0%7D%5D&cuid=5628ee01372d9b5d3a6715628368a204319b6d0b&dayivc=65&fillHomeIndicator=0&flowPond=%7B%22sellTestH%22%3A%221%22%7D&fr=&hideNativeTitleBar=1&hideNav=1&iOSVersion=13.1.3&isGray=0&isWxYike=&lastfrom=in_course_xuankedan_sell_&logpath=N3&nt=wifi&orifrom=&os=ios&padPhone=1&province=%E5%8C%97%E4%BA%AC%E5%B8%82&saleChannelId=&skuids=%5B2195144%2C2202179%5D&token=2_XPXQH3c5HRPtFHkSwi3sCCURmT25QfxM&unionskuids=%5B%5D&vc=416&vcname=13.1.2&zbkvc=235
-
-http://www.zuoyebang.com/static/hy/yike-sell-app-vue/new-address.html?referPageName=&goback=&isWxYike=&saleChannelId=&lastfrom=&logpath=N38&flowPond=&fr=&orifrom=
-
-http://www.zuoyebang.com/static/hy/yike-sell-app-vue/receive-address-list.html?referPageName=&goback=&isWxYike=&saleChannelId=&lastfrom=&logpath=N38&flowPond=&fr=&orifrom=
