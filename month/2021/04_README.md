@@ -4,7 +4,7 @@
  * @Author: liujianwei1
  * @Date: 2021-04-12 16:28:50
  * @LastEditors: liujianwei1
- * @LastEditTime: 2021-04-28 15:53:16
+ * @LastEditTime: 2021-06-01 14:42:51
  * @Reference Desc: 
 -->
 ### low code
@@ -38,3 +38,5 @@
   - /word 向后查找
   - ?word 向前查找
   - f+字符 在某一行内，跳转到字符开头的单词
+
+  https://wiki.zhiyinlou.com/pages/viewpage.action?pageId=127179499
