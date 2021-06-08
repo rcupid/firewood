@@ -1,3 +1,11 @@
+<!--
+ * @Desc: 
+ * @FilePath: /firewood/month/201905/README.md
+ * @Author: liujianwei1
+ * @Date: 2021-03-16 17:07:37
+ * @LastEditors: liujianwei1
+ * @Reference Desc: 
+-->
 
 ### 2019年5月30日 14:44:09
 [指令](./docs/directive.md)
@@ -61,3 +69,4 @@ export default {
 ### 2019年5月17日 11:01:49
 
 [vscode插件](https://zhuanlan.zhihu.com/p/65880876?utm_source=qq&utm_medium=social&utm_oi=706045932076040192)
+[VSCode插件开发全攻略（一）概览](https://www.cnblogs.com/liuxianan/p/vscode-plugin-overview.html)
