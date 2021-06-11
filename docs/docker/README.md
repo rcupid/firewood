@@ -2,8 +2,8 @@
  * @Name: name
  * @Description: description
  * @Author: cupid(cupid@163.com)
- * @LastEditors  : cupid
- * @LastEditTime : 2020-01-13 11:53:09
+ * @LastEditors: liujianwei1
+ * @LastEditTime: 2021-06-11 11:01:41
  * @LastEditContent: 
  -->
 ###
@@ -11,8 +11,10 @@
 pm2 start app.yml
 # 在线监控
 # 开机启动
-```                
+```           
 
+
+[Docker入门到实战](https://yeasy.gitbook.io/docker_practice/)
 ### docker 安装mysql
 [Mac下Docker安装MySql、操作MySql](https://www.jianshu.com/p/d211fec2f34a)  
 [mac下利用docker部署个Mysql](https://www.jianshu.com/p/83ecd99cf3eb)  
