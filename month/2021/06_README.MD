@@ -16,3 +16,5 @@ Alpine 操作系统是一个面向安全的轻型 Linux 发行版。它不同于
 
 ### [OSS对象服务存储](https://www.aliyun.com/product/oss/)
 
+
+### [Node.js入门知识](http://nodejs.cn/learn)
